@@ -1,12 +1,12 @@
 # Fibonacci SEQUENCE
 
-##DESCRIPTION
+## DESCRIPTION
 This is a fibonacci sequence that prints out in html.
 
-##TECHNOLOGIES USED
+## TECHNOLOGIES USED
 * HTML
 * JS
 * JQUERY
 
-##LICENCE
+## LICENCE
 *MIT LICENCE*
