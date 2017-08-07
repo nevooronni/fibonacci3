@@ -1,13 +1,13 @@
 //custom javascript 
 
 //back-end
-var fibonacciLoop = function(userInput) {
+/*var fibonacciLoop = function(userInput) {
 	if(userInput <= 25) {
 		return "Fibonacci Series " + loop(userInput);
 		} else {
 			return "Error enter a number between 0 and 25!"
 		}		
-}
+}*/
 
 
 /*var result = function calcFibonNth(userInput) {
@@ -36,18 +36,28 @@ var fibonacciLoop = function(userInput) {
 	return resultOfAray;
 }*/
 
-var loop = function getFibonacci(userInput) {
+/*var loop = function getFibonacci(userInput) {
 var output = "";
 var oldnumber = -1;
 var newnumber = 1;
-for (i= 0; i < userInput; i++) {
-var prevoldnumber = newnumber;
-newnumber = oldnumber + newnumber;
-oldnumber = prevoldnumber;
-output = output + newnumber + ' ';
+for (i = 0; i < userInput; i++) {
+//var prevoldnumber = newnumber;
+//newnumber = oldnumber + newnumber;
+//oldnumber = prevoldnumber;
+	output = output + newnumber + ' ';
 }
 return output;
-}	
+}*/
+
+var loop = function(userInput) {
+	if(userInput === 1) {
+		return [0,1];
+	} else {
+		var s = loop(userInput - 1);
+		s.push(s[s.length - 1] + s[s.length - 2]);
+		return s;
+	} 
+};	
 
 
 //front-end
